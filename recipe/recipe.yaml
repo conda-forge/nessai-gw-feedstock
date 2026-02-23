@@ -12,7 +12,7 @@ source:
   sha256: b1e025200cb98c8cfa5e2590a2e6d891efb6d3a1833eba7d27015c1a2538f2b9
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -42,7 +42,7 @@ tests:
         - pytest-integration
         - pytest-rerunfailures
         - bilby
-        - astropy
+        - astropy-base
     files:
       source:
         - tests/
